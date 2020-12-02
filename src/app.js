@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
-//app.use('/exercise');
+//app.use('/exercises')/
+
 
 module.exports = app;
