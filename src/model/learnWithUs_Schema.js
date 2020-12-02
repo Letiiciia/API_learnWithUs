@@ -19,6 +19,10 @@ const learnWithUsSchema = new Schema({
         auto: true,
         required: true
     },
+    instructions: {
+        type: String,
+        required: true
+    },
     exercise_1: {
         type: String,
         required: false,
@@ -109,4 +113,4 @@ const learnWithUsSchema = new Schema({
 
 const exercises_learnWithUs = mongoose.model('learnWithUs', learnWithUsSchema);
 
-module.exports = {exercises_learnWithUs}
+module.exports = { exercises_learnWithUs }
