@@ -1,0 +1,58 @@
+Projeto learnWithUs
+
+O projeto surge com a necessidade de, quem está aprendendo idiomas, encontrar exercícios relacionados aos conteúdos.
+
+A API é Básicamente:
+
+Um CRUD com exercícios de tempos verbais e  vocabulários usuais;
+Um modelo open source para que professores e alunos contribuem com materiais e conteúdos no banco de dados;
+O diferencial dos exercícios é que existe um tópico de dicas valiosas, como sugestão de músicas no tempo verbal aprendido, aplicativos, filmes, dentre outros.
+
+
+
+missão:
+Criar uma rede de apoio, incentivo e materiais para a prática constante até a perfeição, livre de custo financeiro. Aprender é prazeroso e aprender em conjunto é maravilhoso.
+
+
+Entregável
+Post - cadastrar o exercício e o contato do criador do material, como nome e linkedin (A ideia é criar um network através dessa iniciativa)
+Get - Trazer os exercícios cadastrados no banco de dados
+Get por Tema (ex: present perfect)
+Get por id (ex: _id:5486565, exercício específico)
+Update por id
+Delete por id
+
+
+
+Desejável
+Evoluir para um aplicativo
+Aceitando ideias
+Ideias para o projeto learnWithUs
+
+O projeto surge com a necessidade de, quem está aprendendo idiomas, encontrar exercícios relacionados aos conteúdos.
+
+A API é Básicamente:
+
+Um CRUD com exercícios de tempos verbais e  vocabulários usuais;
+Um modelo open source para que professores e alunos contribuem com materiais e conteúdos no banco de dados;
+O diferencial dos exercícios é que existe um tópico de dicas valiosas, como sugestão de músicas no tempo verbal aprendido, aplicativos, filmes, dentre outros.
+
+
+
+missão:
+Criar uma rede de apoio, incentivo e materiais para a prática constante até a perfeição, livre de custo financeiro. Aprender é prazeroso e aprender em conjunto é maravilhoso.
+
+
+Entregável
+Post - cadastrar o exercício e o contato do criador do material, como nome e linkedin (A ideia é criar um network através dessa iniciativa)
+Get - Trazer os exercícios cadastrados no banco de dados
+Get por Tema (ex: present perfect)
+Get por id (ex: _id:5486565, exercício específico)
+Update por id
+Delete por id
+
+
+
+Desejável
+Evoluir para um aplicativo
+Aceitando ideias

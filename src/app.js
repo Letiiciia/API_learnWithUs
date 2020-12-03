@@ -1,5 +1,5 @@
-const database = require('./model/learnWithUs_repository');
-const exercisesRoute = require('./routes/learnWithUs_routes');
+const database = require('./model/l.W.Us_repository');
+const exercisesRoute = require('./routes/l.W.Us_routes');
 
 const express = require('express');
 const app = express();
