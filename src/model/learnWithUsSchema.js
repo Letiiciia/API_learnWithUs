@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const learnWithUsSchema = new Schema({
+    _id: {
+        type: mongoose.Schema.Types.ObjectId,
+        auto: true,
+        required: true
+    },
     author: {
         type: String,
         required: true
@@ -14,9 +19,8 @@ const learnWithUsSchema = new Schema({
         type: String,
         required: true
     },
-    _id: {
-        type: mongoose.Schema.Types.ObjectId,
-        auto: true,
+    clue_of_gold: {
+        type: String,
         required: true
     },
     instructions: {
@@ -105,12 +109,10 @@ const learnWithUsSchema = new Schema({
     },
 },
 
-    {
-        versionKey: false
-    }
+    { collection: 'learnWithUs' }
 
-)
+);
 
-const exercises_learnWithUs = mongoose.model('learnWithUs', learnWithUsSchema);
+const learnWithUs = mongoose.model('learnWithUs', learnWithUsSchema);
 
-module.exports = { exercises_learnWithUs }
+module.exports = { learnWithUs }

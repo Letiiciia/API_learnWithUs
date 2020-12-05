@@ -1,5 +1,5 @@
-const database = require('./model/l.W.Us_repository');
-const exercisesRoute = require('./routes/l.W.Us_routes');
+const database = require('./database/mongoose');
+const exercisesRoute = require('./routes/routes');
 
 const express = require('express');
 const app = express();
