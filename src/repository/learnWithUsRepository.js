@@ -1,15 +1,15 @@
-const { learnWithUs } = require('../model/learnWithUsSchema');
+const learnWithUs = require('../model/learnWithUsSchema');
 
-
-async function getAll() {
+async function allExercises() {
     try {
-        return await learnWithUs.find();
+        return await learnWithUs.learnWithUs.find();
     } catch (error) {
         return {};
-    } 
+    }
 }
 
-function addExerciseForm (body) {
+function newExercise(body) {
+
     try {
         const newExerciseForm = new learnWithUs(body);
 
@@ -17,11 +17,19 @@ function addExerciseForm (body) {
     } catch (error) {
         return {};
     }
+
 }
 
-
+async function ExerciseById(id) {
+    try {
+        return await learnWithUs.learnWithUs.find({ _id: id });
+    } catch (error) {
+        return "error";
+    }
+}
 
 module.exports = {
-    getAll,
-    addExerciseForm
+    allExercises,
+    newExercise,
+    ExerciseById
 }
