@@ -115,4 +115,4 @@ const learnWithUsSchema = new Schema({
 
 const learnWithUs = mongoose.model('learnWithUs', learnWithUsSchema);
 
-module.exports = { learnWithUs }
+module.exports =  learnWithUs 
