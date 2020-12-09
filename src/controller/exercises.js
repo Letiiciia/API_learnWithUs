@@ -1,69 +1,62 @@
-const repository = require('../repository/exercises');
+const { get } = require('mongoose');
+const DB_learnWithUs = require('../model/exercisesSchema');
 const status = require('../utils/statusCode');
 
-async function getAll(request, response) {
+const getAll = async (request, response) => {
     console.log(request.url);
-
-    var collection = await repository.allExercises();
-
-    if (collection == {}) {
-        return response.status(status.NotFound).send('LearnWithUs not found');
-    } else {
-        return response.status(status.Succes).send(collection);
+    try {
+        const data = await DB_learnWithUs.find({});
+        console.log(data);
+        response.status(status.Succes).send(data);
+    } catch (error) {
+        response.status(status.Error).send({ message: 'Fail to run the data' });
     }
 }
 
-// function addExerciseForm(request, response) {
-//     console.log(request.url);
-//     const body = request.body;
+const addExercise = (request, response) => {
+    console.log(request.url);
+    const body = request.body;
 
-//     const exercise = repository.newExercise(body);
-//     console.log(exercise);
+    const newExercise = new DB_learnWithUs(body);
 
-//     if (exercise == error) {
-//         return response.status(status.Error).send('New exercise not created');
-//     } else {
-//         return response.status(status.Created).send({
-//             message: 'Created new exercise'
-//         })
-//     }
-// }
+    newExercise.save((error) => {
+        if (error) {
+            return response.status(status.Error).send({ message: 'Fail to creat new Exercise Form' });
+        } else {
+            return response.status(status.Succes).send({ message: 'Created', newExercise });
+        }
+    })
+}
 
-async function getById(request, response) {
+const getById = (request, response) => {
     console.log(request.url);
     const id = request.params.id;
 
-    const form = await repository.exerciseById(id);
-    console.log(form);
-
-    if (form === "empty") {
-        return response.status(status.NotFound).send('ID not found');
-    } else if (form === "error") {
-        return response.status(status.Error).send('Server Error')
-    } else {
-        return response.status(status.Succes).send(form)
-    }
+    DB_learnWithUs.findById({ _id: id }, (error, exercise) => {
+        if (error) {
+            return response.status(status.Error).send({ message: 'Fail to bring the espercific exercise' });
+        } else {
+            return response.status(status.Succes).send({ message: `There is the exercise id: ${id}`, exercise });
+        }
+    })
 }
 
-async function getByTheme(request, response) {
+const getByTheme = (request, response) => {
     console.log(request.url);
-    const theme = request.params.theme;
+    const theme = request.query.theme;
 
-    const form = await repository.exerciseByTheme(theme);
-    console.log(form);
-
-    if (form === "empty") {
-        return response.status(status.NotFound).send('ID not found');
-    } else if (form === "error") {
-        return response.status(status.Error).send('Server Error')
-    } else {
-        return response.status(status.Succes).send(form)
-    }
+    DB_learnWithUs.find({ theme: theme }, (error, exercise) => {
+        if (error) {
+            return response.status(status.Error).send({ message: 'Fail to bring the especific theme' })
+        } else {
+            return response.status(status.Succes).send({ message: `There are the exercises about ${theme}`, exercise })
+        }
+    })
 }
 
 module.exports = {
     getAll,
-    //addExerciseForm,
+    addExercise,
     getById,
     getByTheme
-}
+};  

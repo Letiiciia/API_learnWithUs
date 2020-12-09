@@ -4,4 +4,5 @@ module.exports = class StatusCode{
     static NotFound = 401;
     static Created = 201;
     static Error = 500;
+    static NoContent = 204;
 }

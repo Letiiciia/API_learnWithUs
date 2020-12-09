@@ -1,16 +1,15 @@
 const express = require('express');
 const router = express.Router();
-const learnWithUsController = require('../controller/exercises');
+const controller = require('../controller/exercises');
 
-router.get('/exercises', learnWithUsController.getAll);
-//router.post('/new', learnWithUsController.addExerciseForm);
-router.get('/exercise/:id', learnWithUsController.getById);
-router.get('/exercise/:theme', learnWithUsController.getByTheme);
-
-
+router.get('/exercises', controller.getAll);
+router.post('/new', controller.addExercise);
+router.get('/exercises/:id', controller.getById);
+router.get('/exercises', controller.getByTheme); //Made with query, because I didn't got use regex 
 
 
 
 
 
-module.exports= router;
+
+module.exports = router

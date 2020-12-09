@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const learnWithUsSchema = new Schema({
+const exerciseSchema = new Schema({
     _id: {
         type: mongoose.Schema.Types.ObjectId,
         auto: true,
@@ -109,10 +109,10 @@ const learnWithUsSchema = new Schema({
     },
 },
 
-    { collection: 'learnWithUs' }
+    { collection: 'exercisesForms' }
 
 );
 
-const learnWithUs = mongoose.model('learnWithUs', learnWithUsSchema);
+const DB_learnWithUs = mongoose.model('exercisesForms', exerciseSchema);
 
-module.exports =  learnWithUs 
+module.exports =  DB_learnWithUs
