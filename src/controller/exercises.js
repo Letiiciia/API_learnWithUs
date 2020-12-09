@@ -47,16 +47,69 @@ const getByTheme = (request, response) => {
 
     DB_learnWithUs.find({ theme: theme }, (error, exercise) => {
         if (error) {
-            return response.status(status.Error).send({ message: 'Fail to bring the especific theme' })
+            return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
         } else {
-            return response.status(status.Succes).send({ message: `There are the exercises about ${theme}`, exercise })
+            return response.status(status.Succes).send({ message: `There are the exercises about ${theme}`, exercise });
         }
     })
 }
 
+const updateById = (request, response) => {
+    console.log(request.url);
+    const id = request.params.id;
+    const body = request.body;
+    const update = { new: true };
+
+    DB_learnWithUs.findByIdAndUpdate(
+        id,
+        body,
+        update,
+        (error, exercise) => {
+            if (error) {
+                return response.status(status.Error).send({ message: `Fail to update the document id: ${id}` });
+            } else {
+                return response.status(status.Succes).send({ message: `Update document id: ${id}`, exercise });
+            }
+        }
+    )
+}
+
+const deleteById = (request, response) => {
+    console.log(request.url);
+    const id = request.params.id;
+
+    DB_learnWithUs.findByIdAndDelete({ _id: id }, (error) => {
+        if (error) {
+            return response.status(status.Error).send({ message: `Fail to delete the document id: ${id}` });
+        } else {
+            return response.status(status.Succes).send({ message: `Document id: ${id} deleted` });
+        }
+    })
+}
+
+const deleteByAuthor = (request, response) => {
+    console.log(request.url);
+    const author = request.query.author;
+    const linkedin = request.query.profile_linkedin
+
+    DB_learnWithUs.deleteMany(
+        {author: author}, 
+        {profile_linkedin: linkedin},
+        (error) => {
+            if(error){
+                return response.status(status.Error).send({message: `Fail to delete the ${author}'s document`});
+            }else{
+                return response.status(status.Succes).send({message: `${author}'s Document deleted`});
+            }
+        })
+
+}
 module.exports = {
     getAll,
     addExercise,
     getById,
-    getByTheme
+    getByTheme,
+    updateById,
+    deleteById,
+    deleteByAuthor
 };  
