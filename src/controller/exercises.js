@@ -7,7 +7,7 @@ const getAll = async (request, response) => {
     try {
         const data = await DB_learnWithUs.find({});
         console.log(data);
-        response.status(status.Succes).send(data);
+        response.status(status.Success).send(data);
     } catch (error) {
         response.status(status.Error).send({ message: 'Fail to run the data' });
     }
@@ -23,7 +23,7 @@ const addExercise = (request, response) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to creat new Exercise Form' });
         } else {
-            return response.status(status.Succes).send({ message: 'Created', newExercise });
+            return response.status(status.Success).send({ message: 'Created', newExercise });
         }
     })
 }
@@ -34,9 +34,9 @@ const getById = (request, response) => {
 
     DB_learnWithUs.findById({ _id: id }, (error, exercise) => {
         if (error) {
-            return response.status(status.Error).send({ message: 'Fail to bring the espercific exercise' });
+            return response.status(status.Error).send({ message: 'Fail to bring the especific exercise' });
         } else {
-            return response.status(status.Succes).send({ message: `There is the exercise id: ${id}`, exercise });
+            return response.status(status.Success).send({ message: `Here is the exercise id: ${id}`, exercise });
         }
     })
 }
@@ -49,7 +49,7 @@ const getByTheme = (request, response) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
         } else {
-            return response.status(status.Succes).send({ message: `There are the exercises about ${theme}`, exercise });
+            return response.status(status.Success).send({ message: `Here are the exercises about ${theme}`, exercise });
         }
     })
 }
@@ -68,7 +68,7 @@ const updateById = (request, response) => {
             if (error) {
                 return response.status(status.Error).send({ message: `Fail to update the document id: ${id}` });
             } else {
-                return response.status(status.Succes).send({ message: `Update document id: ${id}`, exercise });
+                return response.status(status.Success).send({ message: `document successfully updated id: ${id}`, exercise });
             }
         }
     )
@@ -82,7 +82,7 @@ const deleteById = (request, response) => {
         if (error) {
             return response.status(status.Error).send({ message: `Fail to delete the document id: ${id}` });
         } else {
-            return response.status(status.Succes).send({ message: `Document id: ${id} deleted` });
+            return response.status(status.Success).send({ message: `Document id: ${id} deleted` });
         }
     })
 }
@@ -99,7 +99,7 @@ const deleteByAuthor = (request, response) => {
             if(error){
                 return response.status(status.Error).send({message: `Fail to delete the ${author}'s document`});
             }else{
-                return response.status(status.Succes).send({message: `${author}'s Document deleted`});
+                return response.status(status.Success).send({message: `${author}'s Document deleted`});
             }
         })
 
