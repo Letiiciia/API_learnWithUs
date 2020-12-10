@@ -10,7 +10,7 @@ const getAll = async (request, response) => {
         response.status(status.Success).send(data);
     } catch (error) {
         console.log(error);
-        response.status(status.Error).send({ message: 'Fail to run the data' });
+        response.status(status.Error).send({ message: 'erro ao acessar db' });
         
     }
 }
