@@ -9,8 +9,9 @@ const getAll = async (request, response) => {
         console.log(data);
         response.status(status.Success).send(data);
     } catch (error) {
-        response.status(status.Error).send({ message: 'Fail to run the data' });
         console.log(error);
+        response.status(status.Error).send({ message: 'Fail to run the data' });
+        
     }
 }
 
