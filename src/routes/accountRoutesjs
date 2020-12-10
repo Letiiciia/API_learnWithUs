@@ -1,0 +1,9 @@
+const express = require('express');
+const router = express.Router();
+const accountController = require('../controller/account');
+
+router.post('/register', accountController.addAccount);
+router.patch('/update/:id', accountController.updateAccount)
+
+
+module.exports = router

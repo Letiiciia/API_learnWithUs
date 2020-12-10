@@ -1,5 +1,5 @@
 const { get } = require('mongoose');
-const DB_learnWithUs = require('../model/exercisesSchema');
+const DB_learnWithUs = require('../model/exerciseSchema');
 const status = require('../utils/statusCode');
 
 const getAll = async (request, response) => {
@@ -10,6 +10,7 @@ const getAll = async (request, response) => {
         response.status(status.Success).send(data);
     } catch (error) {
         response.status(status.Error).send({ message: 'Fail to run the data' });
+        console.log(error);
     }
 }
 

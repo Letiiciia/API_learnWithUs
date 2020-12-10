@@ -1,6 +1,6 @@
 const database = require('./database/mongoose');
 const exercisesRoute = require('./routes/exerciseRoutes');
-const userRoute = require('./routes/authRoutes')
+const userRoute = require('./routes/accountRoutesjs')
 
 const express = require('express');
 const app = express();
@@ -17,9 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/exercise', exercisesRoute);
 
-app.use('/', userRoute, (request, response) => {
-    response.send('Everything are working well!')
-});
+app.use('/', userRoute)
 
 
 

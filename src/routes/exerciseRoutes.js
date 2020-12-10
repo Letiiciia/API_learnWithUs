@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const exerciseController = require('../controller/exercises');
+const exerciseController = require('../controller/exercise');
 
 router.get('/all', exerciseController.getAll);
 router.post('/new', exerciseController.addExercise);
