@@ -17,6 +17,16 @@ const addAccount = (request, response) => {
     })
 }
 
+const getAccounts = async (request, response) => {
+    console.log(request.url);
+    try {
+        const user = await User_learnWithUs.find({});
+        return response.status(status.Success).send({ user });
+    } catch (error) {
+        return response.status(status.Error).send({ message: 'Error to bring every accounts' })
+    }
+}
+
 const updateAccount = (request, response) => {
     console.log(request.url);
     const id = request.params.id;
@@ -37,8 +47,23 @@ const updateAccount = (request, response) => {
     )
 }
 
+const deleteAccount = (request, response) => {
+    console.log(request.url);
+    const id = request.params.id;
+
+    User_learnWithUs.findByIdAndDelete({_id:id}, (error) => {
+        if(error){
+            return response.status(status.Error).send({message: 'Error'});
+        }else{
+            return response.status(status.Success).send({message: 'Account deleted'})
+        }
+    })
+}
+
 
 module.exports = {
     addAccount,
-    updateAccount
+    getAccounts,
+    updateAccount,
+    deleteAccount
 }
