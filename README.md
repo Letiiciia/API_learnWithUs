@@ -157,15 +157,12 @@
 
 | Recurso | Descrição |
 | --- | --- |
-| `/accounts` | Retorna usuários sem
-                dados sencíveis     |
+| `/accounts` | Retorna usuários dados sencíveis     |
 
 | Recurso | Descrição |
 | --- | --- |
-| `/update/:id` | Atualiza usuário 
-                  específico        |
+| `/update/:id` | Atualiza usuário específico        |
 
 | Recurso | Descrição |
 | --- | --- |
-| `/delete/:id` | Deleta usuário 
-                  específico        |
+| `/delete/:id` | Deleta usuário específico        |
