@@ -7,6 +7,8 @@
 <p>O projeto surge com a necessidade de, quem está aprendendo idiomas, encontrar exercícios relacionados aos conteúdos.
 </p>
 
+
+
 **Modelo Exercício**
 
 ```json
@@ -32,14 +34,20 @@
 ```
 -   Pode inserir até 10 exercícios por formulário.
 
+
+
 **A API possui:**
 - ``Um CRUD `` com exercícios de tempos verbais e  vocabulários usuais
-- ``Modelo Open Source `` para que professores e alunos contribuem com materiais e conteúdos no banco de dados 
+- ``Modelo Open Source `` para que professores e alunos contribuam com materiais e conteúdos no banco de dados 
+
+
 
 **A Missão**
 
 <p>Criar uma rede de apoio, incentivo e materiais para a prática constante até a perfeição, livre de custo financeiro. Aprender é prazeroso e aprender em conjunto é maravilhoso.
 </p>
+
+
 
 **Arquitetura**
 
@@ -88,6 +96,8 @@
                 |__   
 
 
+
+
 **CRUD do Exercício**
 **Composto por:**
   
@@ -99,6 +109,8 @@
 - [x] Delete - por id
 - [x]  Delete - por theme
 
+
+
 **CRUD da Conta**
 **Composta por:**
 
@@ -106,6 +118,8 @@
 - [x]  Get  - cadastros
 - [x]  Update - por id
 - [x]  delete - por id
+
+
 
 **EndPoints exercício**
 
@@ -133,6 +147,8 @@
 | --- | --- |
 | `/exercise/delete/:id` || `/exercise/delete` | Deleta exercício específico |
 
+
+
 **EndPoints conta**
 
 | Recurso | Descrição |
@@ -141,12 +157,15 @@
 
 | Recurso | Descrição |
 | --- | --- |
-| `/accounts` | Retorna usuários sem dados sencíveis |
+| `/accounts` | Retorna usuários sem
+                dados sencíveis     |
 
 | Recurso | Descrição |
 | --- | --- |
-| `/update/:id` | Atualiza usuário específico |
+| `/update/:id` | Atualiza usuário 
+                  específico        |
 
 | Recurso | Descrição |
 | --- | --- |
-| `/delete/:id` | Deleta usuário específico|
+| `/delete/:id` | Deleta usuário 
+                  específico        |
