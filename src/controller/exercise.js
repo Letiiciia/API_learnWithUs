@@ -10,8 +10,7 @@ const getAll = async (request, response) => {
         response.status(status.Success).send(data);
     } catch (error) {
         console.log(error);
-        response.status(status.Error).send({ message: 'erro ao acessar db' });
-        
+        response.status(status.Error).send({ message: 'Error to bring the Exercises!' });
     }
 }
 
@@ -47,7 +46,7 @@ const getByTheme = async (request, response) => {
     console.log(request.url);
     const theme = request.query.theme;
 
-    await DB_learnWithUs.find({ theme: theme }, (error, exercise) => {
+    await DB_learnWithUs.findOne({ theme: theme }, (error, exercise) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
         } else {
@@ -95,13 +94,13 @@ const deleteByAuthor = (request, response) => {
     const linkedin = request.query.profile_linkedin
 
     DB_learnWithUs.deleteMany(
-        {author: author}, 
-        {profile_linkedin: linkedin},
+        { author: author },
+        { profile_linkedin: linkedin },
         (error) => {
-            if(error){
-                return response.status(status.Error).send({message: `Fail to delete the ${author}'s document`});
-            }else{
-                return response.status(status.Success).send({message: `${author}'s Document deleted`});
+            if (error) {
+                return response.status(status.Error).send({ message: `Fail to delete the ${author}'s document` });
+            } else {
+                return response.status(status.Success).send({ message: `${author}'s Document deleted` });
             }
         })
 

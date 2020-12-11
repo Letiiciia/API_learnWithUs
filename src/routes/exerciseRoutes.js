@@ -5,14 +5,10 @@ const exerciseController = require('../controller/exercise');
 router.get('/all', exerciseController.getAll);
 router.post('/new', exerciseController.addExercise);
 router.get('/:id', exerciseController.getById);
-router.get('/theme', exerciseController.getByTheme); //Made with query, because I didn't got use regex 
+router.get('/theme', exerciseController.getByTheme); //query
 router.patch('/update/:id', exerciseController.updateById);
 router.delete('/delete/:id', exerciseController.deleteById);
 router.delete('/delete', exerciseController.deleteByAuthor);
-
-
-
-
 
 
 module.exports = router
