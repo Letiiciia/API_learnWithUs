@@ -1,7 +1,7 @@
 ### Entendendo o projeto learnWithUs
 
 <p align="center">
-<img src="https://github.com/Letiiciia/exercicio1-reprograma/blob/master/Img/download.png">
+<img src="https://github.com/Letiiciia/API_learnWithUs/tree/master/img">
 </p>
 
 O projeto surge com a necessidade de, quem está aprendendo idiomas, encontrar exercícios relacionados aos conteúdos.
