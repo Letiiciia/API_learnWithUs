@@ -1,10 +1,35 @@
-<p align="Entendendo o projeto learnWithUs">
+### Entendendo o projeto learnWithUs
 
 <p align="center">
 <img src="https://github.com/Letiiciia/API_learnWithUs/blob/master/img/image-asset.png">
 </p>
 
 O projeto surge com a necessidade de, quem está aprendendo idiomas, encontrar exercícios relacionados aos conteúdos.
+
+**Exercícios**
+
+```json
+    [
+        {
+        "id": 5fd2a6052959af002434fb84,
+        "author": "Letícia Lima",
+        "profile_linkedin": "https://www.linkedin.com/in/leticia-flima/",
+        "theme": "Present Perfect",
+        "instructions": {
+            "id": 154,
+            "name": "Do Tamanho Do Nosso Amor",
+            "release_date": "2013-01-01",
+            "total_tracks": 14,
+            "url": "https://i.scdn.co/image/ab67616d00001e0252b5ab856085fe47ccec3cce"
+        },
+        "artists": {
+            "id": "7gfkYbxpguEc9bm6m8TpAr",
+            "name": "Chitãozinho & Xororó"
+        }
+        }, 
+        ...
+    ] 
+```
 
 A API é Básicamente:
 
