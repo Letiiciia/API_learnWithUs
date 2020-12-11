@@ -87,7 +87,7 @@
                 |__   
 
 
-**Exercício**
+**CRUD do Exercício**
 **Composto por:**
   
 - [x] Post - cadastrar o exercício e o contato do criador do material, como nome e linkedin (A ideia é criar um network através dessa iniciativa)
@@ -98,7 +98,7 @@
 - [x] Delete - por id
 - [x]  Delete - por theme
 
-**Conta**
+**CRUD da Conta**
 **Composta por:**
 
 - [x]  Post - cadastrar o login do usuário/contribuinte
@@ -106,7 +106,7 @@
 - [x]  Update - por id
 - [x]  delete - por id
 
-**Exemplos de Contratos**
+**EndPoints exercício**
 
 | Recurso | Descrição |
 | --- | --- |
@@ -131,3 +131,21 @@
 | Recurso | Descrição |
 | --- | --- |
 | `/exercise/delete/:id` || `/exercise/delete` | Deleta exercício específico |
+
+**EndPoints conta**
+
+| Recurso | Descrição |
+| --- | --- |
+| `/register` | Cadastra um usuário |
+
+| Recurso | Descrição |
+| --- | --- |
+| `/accounts` | Retorna usuários sem dados sencíveis |
+
+| Recurso | Descrição |
+| --- | --- |
+| `/update/:id` | Atualiza usuário específico |
+
+| Recurso | Descrição |
+| --- | --- |
+| `/delete/:id` | Deleta usuário específico|
