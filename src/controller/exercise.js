@@ -37,10 +37,11 @@ const getById = (request, response) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to bring the especific exercise' });
         } else {
-            if(exercise == null){
+            if (exercise === null) {
                 return response.status(status.BadReq).send({ message: 'Id not identified' });
+            } else {
+                return response.status(status.Success).send({ message: `Here is the exercise id: ${id}`, exercise });
             }
-            return response.status(status.Success).send({ message: `Here is the exercise id: ${id}`, exercise });
         }
     })
 }
