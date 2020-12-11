@@ -30,6 +30,7 @@
         }
     ] 
 ```
+-   Pode inserir até 10 exercícios por formulário.
 
 **A API possui:**
 - ``Um CRUD `` com exercícios de tempos verbais e  vocabulários usuais
