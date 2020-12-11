@@ -48,9 +48,9 @@ const getById = (request, response) => {
 //trouble
 const getByTheme = async (request, response) => {
     console.log(request.url);
-    const theme = request.query.theme;
+    const theme = request.query;
 
-    const exercise = await DB_learnWithUs.findOne({ theme: theme }, (error, exercise) => {
+    await DB_learnWithUs.find(theme , (error, exercise) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
         } else {
