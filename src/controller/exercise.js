@@ -45,7 +45,7 @@ const getById = (request, response) => {
         }
     })
 }
-
+//trouble
 const getByTheme = async (request, response) => {
     console.log(request.url);
     const theme = request.query.theme;
@@ -87,7 +87,7 @@ const deleteById = (request, response) => {
         if (error) {
             return response.status(status.Error).send({ message: `Fail to delete the document id: ${id}` });
         } else {
-            return response.status(status.Success).send({ message: `Document id: ${id} deleted` });
+            return response.status(status.Success).send({ message: `Document deleted` });
         }
     })
 }
@@ -104,7 +104,7 @@ const deleteByAuthor = (request, response) => {
             if (error) {
                 return response.status(status.Error).send({ message: `Fail to delete the ${author}'s document` });
             } else {
-                return response.status(status.Success).send({ message: `${author}'s Document deleted` });
+                return response.status(status.Success).send({ message: `Document deleted` });
             }
         })
 }
