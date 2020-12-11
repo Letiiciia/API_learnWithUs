@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const accountController = require('../controller/account');
+const accountController = require('../controller/accountControllers');
 
 router.post('/register', accountController.addAccount);
 router.get('/accounts', accountController.getAccounts);
