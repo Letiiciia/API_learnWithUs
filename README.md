@@ -41,8 +41,9 @@
 <p>Criar uma rede de apoio, incentivo e materiais para a prática constante até a perfeição, livre de custo financeiro. Aprender é prazeroso e aprender em conjunto é maravilhoso.
 </p>
 
+**Exercício**
 **Composta por:**
-  **Exercício**
+  
 -   Post - cadastrar o exercício e o contato do criador do material, como nome e linkedin (A ideia é criar um network através dessa iniciativa)
 -  Get - Trazer os exercícios cadastrados no banco de dados
 -   Get - por Tema (ex: present perfect)
@@ -51,8 +52,9 @@
 -   Delete - por id
 -   Delete - por theme
 
-**Composta por:**
   **Conta**
+**Composta por:**
+
 -   Post - cadastrar o login do usuário/contribuinte
 -   Get  - cadastros
 -   Update - por id
