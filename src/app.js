@@ -1,4 +1,4 @@
-const database = require('./database/mongoose');
+const database = require('./database/connect');
 const exercisesRoute = require('./routes/exerciseRoutes');
 const userRoute = require('./routes/accountRoutes.js')
 
