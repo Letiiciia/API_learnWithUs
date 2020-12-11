@@ -1,4 +1,5 @@
 ### Entendendo o projeto learnWithUs
+### Understanding the learnWithUs project
 
 <p align="center">
 <img src="https://github.com/Letiiciia/API_learnWithUs/blob/master/img/image-asset.png">
@@ -7,7 +8,8 @@
 <p>O projeto surge com a necessidade de, quem está aprendendo idiomas, encontrar exercícios relacionados aos conteúdos.
 </p>
 
-
+<p>The project was born with the necessity, who is learning lenguages, to find exercises about contents in english.
+</p>
 
 **Modelo Exercício**
 
@@ -199,3 +201,8 @@ Deploy
 
 
 Clique para visualizar o desenho da [DiagramLearnWithUs.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.jpg)
+
+
+
+
+
