@@ -1,4 +1,4 @@
-<p align= ### Entendendo o projeto learnWithUs>
+<p align="Entendendo o projeto learnWithUs">
 
 <p align="center">
 <img src="https://github.com/Letiiciia/API_learnWithUs/blob/master/img/image-asset.png">
