@@ -165,4 +165,34 @@
 
 | Recurso | Descrição |
 | --- | --- |
-| `/delete/:id` | Deleta usuário específico        |
+| `/delete/:id` | Deleta usuário específico        |Server Local
+
+
+### Rodando o Back End 
+
+```bash
+Server Local
+# Com o git
+# Clone este repositório
+$ git clone <https://github.com/Letiiciia/API_learnWithUs>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd API_learnWithUs
+
+# Instale as dependências
+$ npm install
+$ npm instal mongoose
+
+# Execute o servidor
+$ npm start
+
+# O servidor inciará na porta:8080 - acesse <http://localhost:8080>
+# Mongo conectado em mongodb://localhost:27017/reprograma
+```
+
+```bash
+Deploy
+* Acesse o [link da API](https://lwus.herokuapp.com/)
+
+* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
+```

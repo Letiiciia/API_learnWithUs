@@ -45,23 +45,6 @@ const getById = (request, response) => {
         }
     })
 }
-//trouble
-const deleteTheme = (request, response) =>{
-    const theme =request.query.theme
-    DB_learnWithUs.findByIdAndDelete(theme, (error) => {
-        if(error){
-        return response.status(400).send(error)
-    }else{
-        return response.status(200).send({
-            mensagem: "Deletado com sucesso",
-            
-        })
-    }
-
-    })
-
-}
-
 
 const updateById = (request, response) => {
     console.log(request.url);
@@ -117,7 +100,6 @@ module.exports = {
     getAll,
     addExercise,
     getById,
-    deleteTheme,
     updateById,
     deleteById,
     deleteByAuthor
