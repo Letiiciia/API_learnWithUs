@@ -53,7 +53,7 @@ const getByTheme = async (request, response) => {
         } else {
             return response.status(status.Success).send({ message: `Here are the exercises about ${theme}`, exercise });
         }
-    })
+    }).exec();
 }
 
 const updateById = (request, response) => {
