@@ -46,7 +46,7 @@ const getByTheme = async (request, response) => {
     console.log(request.url);
     const theme = request.query.theme;
 
-    await DB_learnWithUs.findOne({ theme: theme }, (error, exercise) => {
+    const exercise = await DB_learnWithUs.findOne({ theme: theme }, (error, exercise) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
         } else {
@@ -103,8 +103,8 @@ const deleteByAuthor = (request, response) => {
                 return response.status(status.Success).send({ message: `${author}'s Document deleted` });
             }
         })
-
 }
+
 module.exports = {
     getAll,
     addExercise,
