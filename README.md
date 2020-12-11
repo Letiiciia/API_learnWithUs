@@ -15,22 +15,21 @@ O projeto surge com a necessidade de, quem está aprendendo idiomas, encontrar e
         "author": "Letícia Lima",
         "profile_linkedin": "https://www.linkedin.com/in/leticia-flima/",
         "theme": "Present Perfect",
-        "instructions": {
-            "id": 154,
-            "name": "Do Tamanho Do Nosso Amor",
-            "release_date": "2013-01-01",
-            "total_tracks": 14,
-            "url": "https://i.scdn.co/image/ab67616d00001e0252b5ab856085fe47ccec3cce"
-        },
-        "artists": {
-            "id": "7gfkYbxpguEc9bm6m8TpAr",
-            "name": "Chitãozinho & Xororó"
+        "instructions": "Put the verbs into the correct form (present perfect simple).",
+        "exercise_1": "I (not / work) _____ today.",
+        "exercise_2": "We (buy) _____ a new lamp.",
+        "exercise_3": "We (not / plan) _____ our holiday yet.",
+        "exercise_4": "Where (be / you) ______ ?",
+        "exercise_5": "He (write) ____ five letters.",
+        "answer_1": "have not worked",
+        "answer_2": "have bought",
+        "answer_3": "have not planned",
+        "answer_4": "have you been",
+        "answer_5": "has written"
         }
-        }, 
-        ...
     ] 
 ```
-
+$\a$
 A API é Básicamente:
 
 Um CRUD com exercícios de tempos verbais e  vocabulários usuais;
