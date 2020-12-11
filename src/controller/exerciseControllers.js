@@ -46,18 +46,22 @@ const getById = (request, response) => {
     })
 }
 //trouble
-const getByTheme = async (request, response) => {
-    console.log(request.url);
-    const theme = request.query;
+const deleteTheme = (request, response) =>{
+    const theme =request.query.theme
+    DB_learnWithUs.findByIdAndDelete(theme, (error) => {
+        if(error){
+        return response.status(400).send(error)
+    }else{
+        return response.status(200).send({
+            mensagem: "Deletado com sucesso",
+            
+        })
+    }
 
-    const exercise = await DB_learnWithUs.find(theme , (error) => {
-        if (error) {
-            return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
-        } else {
-            return response.status(status.Success).send({ message: `Here are the exercises about ${theme}`, exercise });
-        }
-    });
+    })
+
 }
+
 
 const updateById = (request, response) => {
     console.log(request.url);
@@ -113,7 +117,7 @@ module.exports = {
     getAll,
     addExercise,
     getById,
-    getByTheme,
+    deleteTheme,
     updateById,
     deleteById,
     deleteByAuthor
