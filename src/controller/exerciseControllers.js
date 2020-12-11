@@ -50,7 +50,7 @@ const getByTheme = async (request, response) => {
     console.log(request.url);
     const theme = request.query;
 
-    await DB_learnWithUs.find(theme , (error, exercise) => {
+    const exercise = await DB_learnWithUs.find(theme , (error) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
         } else {
