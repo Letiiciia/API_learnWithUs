@@ -47,7 +47,7 @@ const getByTheme = async (request, response) => {
     console.log(request.url);
     const theme = request.query.theme;
 
-    await DB_learnWithUs.find({ "theme": theme }, (error, exercise) => {
+    await DB_learnWithUs.find({ theme: theme }, (error, exercise) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
         } else {
