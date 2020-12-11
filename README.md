@@ -196,3 +196,6 @@ Deploy
 
 * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
 ```
+
+
+Clique para visualizar o desenho da [Arquitetura](/img/[apihogararquitetura.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.jpg))
