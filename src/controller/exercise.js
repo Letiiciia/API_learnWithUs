@@ -47,7 +47,7 @@ const getByTheme = (request, response) => {
     console.log(request.url);
     const theme = request.query.theme;
 
-    DB_learnWithUs.find({ theme: theme }, (error, exercise) => {
+    DB_learnWithUs.find({ "theme": theme }, (error, exercise) => {
         if (error) {
             return response.status(status.Error).send({ message: 'Fail to bring the especific theme' });
         } else {

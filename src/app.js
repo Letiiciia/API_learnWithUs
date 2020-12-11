@@ -15,11 +15,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.use('/exercise', exercisesRoute);
+//Rotas principais
 
-app.use('/', userRoute, () => {
-    console.log("API learnWithUs")
-})
+app.use('/exercise', exercisesRoute);
+app.use('/', userRoute)
 
 
 
