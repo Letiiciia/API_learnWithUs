@@ -195,7 +195,7 @@
 
 | Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/exercise/delete/:id` || `/exercise/delete` | Deleta exercício específico/Delete a specific exercise |
+| `/exercise/delete/:id` | Deleta exercício específico/Delete a specific exercise |
 
 
 ---
