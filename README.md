@@ -15,7 +15,7 @@
 
 ---
 
-**Modelo Exercício**
+**Modelo Exercício** //
 **Exercise Model**
 
 ```json
@@ -46,7 +46,7 @@
 ---
 
 
-**A API possui:**
+**A API possui:** // 
 **The API has:**
 - ``Um CRUD `` com exercícios de tempos verbais e  vocabulários usuais
 - ``Modelo Open Source `` para que professores e alunos contribuam com materiais e conteúdos no banco de dados 
@@ -60,7 +60,7 @@
 ---
 
 
-**A Missão**
+**A Missão** // 
 **The Mission**
 <p>Criar uma rede de apoio, incentivo e materiais para a prática constante até a perfeição, livre de custo financeiro. Aprender é prazeroso e aprender em conjunto é maravilhoso.
 </p>
@@ -71,7 +71,7 @@
 ---
 
 
-**Arquitetura**
+**Arquitetura** // 
 **Architecture**
 
         MVC
@@ -124,7 +124,7 @@
 
 
 **CRUD do Exercício**-
-**Composto por:**//
+**Composto por:** // 
 **Exercise CRUD**-
 **Made with:**
   
@@ -151,7 +151,7 @@
 
 
 **CRUD da Conta**-
-**Composta por:**//
+**Composta por:** //
 **Account CRUD**-
 **Made with:**
 
@@ -171,7 +171,7 @@
 ---
 
 
-**EndPoints exercício**//
+**EndPoints exercício** //
 **Exercises endpoints**
 
 | Recurso/Resource | Descrição/Description |
@@ -203,7 +203,7 @@
 
 
 
-**EndPoints conta**//
+**EndPoints conta** //
 **Account endpoints**
 
 | Recurso/Resource | Descrição/Description |
@@ -226,7 +226,7 @@
 ---
 
 
-### Rodando o Back End //
+### Rodando o Back End 
 ### Running the Back End
 
 ```bash
