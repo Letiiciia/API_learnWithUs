@@ -269,9 +269,9 @@ Deploy
 
 
 
-Clique para visualizar o desenho da [DiagramLearnWithUs.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.jpg)
+Clique para visualizar o desenho da [DiagramLearnWithUs.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.png)
 
-Click to visualize the drawing of [DiagramLearnWithUs.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.jpg)
+Click to visualize the drawing of [DiagramLearnWithUs.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.png)
 
 
 
