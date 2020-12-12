@@ -257,9 +257,9 @@ $ npm start
 
 ```bash
 Deploy
-* Acesse o [link da API](https://lwus.herokuapp.com/) /Access the link
+* Acesse o [link da API](https://lwus.herokuapp.com/) 
 
-* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku / Utilize to return and test the API andpoints locally or via Heroku
+* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
 ```
 
 
