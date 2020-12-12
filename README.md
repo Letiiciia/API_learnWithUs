@@ -46,17 +46,8 @@
 ---
 
 
-<p> 
-
 **A API possui:**
-
-</p.>
-
-<p>
-
 **The API has:**
-
-</p.>
 - ``Um CRUD `` com exercícios de tempos verbais e  vocabulários usuais
 - ``Modelo Open Source `` para que professores e alunos contribuam com materiais e conteúdos no banco de dados 
 
@@ -132,9 +123,9 @@
 ---
 
 
-**CRUD do Exercício**
-**Composto por:**
-**Exercise CRUD**
+**CRUD do Exercício**-
+**Composto por:**//
+**Exercise CRUD**-
 **Made with:**
   
 - [x] Post - Cadastrar o exercício e o contato do criador do material, como nome e linkedin (A ideia é criar um network através dessa iniciativa)
@@ -144,8 +135,8 @@
 - [x] Update - Por id
 - [x] Delete - Por id
 - [x]  Delete - Por theme
-  ..
-
+  
+---
 
 - [x] Post - Register the exercise and the user of the material creator, Such as name and linkedin profile (The idea is to creat a network through this initiative)
 - [x] Get - To bring the registered exercises on data base
@@ -159,15 +150,17 @@
 
 
 
-**CRUD da Conta**
-**Composta por:**
-**Account CRUD**
+**CRUD da Conta**-
+**Composta por:**//
+**Account CRUD**-
 **Made with:**
 
 - [x]  Post - Cadastrar o login do usuário/contribuinte
 - [x]  Get  - Cadastros
 - [x]  Update - Por id
 - [x]  delete - Por id..
+  
+---
 
 - [x]  Post - Register user/contributor login
 - [x]  Get  - Registers
@@ -178,7 +171,7 @@
 ---
 
 
-**EndPoints exercício**
+**EndPoints exercício**//
 **Exercises endpoints**
 
 | Recurso/Resource | Descrição/Description |
@@ -210,7 +203,7 @@
 
 
 
-**EndPoints conta**
+**EndPoints conta**//
 **Account endpoints**
 
 | Recurso/Resource | Descrição/Description |
@@ -233,7 +226,7 @@
 ---
 
 
-### Rodando o Back End 
+### Rodando o Back End //
 ### Running the Back End
 
 ```bash
