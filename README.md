@@ -1,6 +1,8 @@
 ### Entendendo o projeto learnWithUs
 ### Understanding the learnWithUs project
 
+---
+
 <p align="center">
 <img src="https://github.com/Letiiciia/API_learnWithUs/blob/master/img/image-asset.png">
 </p>
@@ -10,6 +12,8 @@
 
 <p>The project was born with the necessity of those who are learning languages to find exercises about contents in English.
 </p>
+
+---
 
 **Modelo Exercício**
 **Exercise Model**
@@ -39,20 +43,32 @@
 -   We can insert up to 10 exercises for form.
 
 
+---
+
 
 **A API possui:**
 **The API has:**
 - ``Um CRUD `` com exercícios de tempos verbais e  vocabulários usuais
 - ``Modelo Open Source `` para que professores e alunos contribuam com materiais e conteúdos no banco de dados 
+
+
+
 - ``A CRUD `` with exercises about verb tenses and usual vocabularies
 - ``Model Open Source `` for teachers and students to contribute with materials and contents on the database
+
+
+---
+
 
 **A Missão**
 **The Mission**
 <p>Criar uma rede de apoio, incentivo e materiais para a prática constante até a perfeição, livre de custo financeiro. Aprender é prazeroso e aprender em conjunto é maravilhoso.
 </p>
+
 <p>Creating a support network, encouragement and materials to practice regularly in order to reach perfection, without financial costs. Learning is pleasurable and learning with other people is awesome.
 </p>
+
+---
 
 
 **Arquitetura**
@@ -104,6 +120,8 @@
 
 
 
+---
+
 
 **CRUD do Exercício**
 **Composto por:**
@@ -117,7 +135,10 @@
 - [x] Update - Por id
 - [x] Delete - Por id
 - [x]  Delete - Por theme
-  
+
+
+
+
 - [x] Post - Register the exercise and the user of the material creator, Such as name and linkedin profile (The idea is to creat a network through this initiative)
 - [x] Get - To bring the registered exercises on data base
 - [x] Get - For theme (eg: present perfect)
@@ -125,6 +146,8 @@
 - [x] Update - For id
 - [x] Delete - For id
 
+
+---
 
 
 
@@ -138,11 +161,16 @@
 - [x]  Update - Por id
 - [x]  delete - Por id
 
+
+
+
 - [x]  Post - Register user/contributor login
 - [x]  Get  - Registers
 - [x]  Update - For id
 - [x]  delete - For id
 
+
+---
 
 
 **EndPoints exercício**
@@ -173,6 +201,9 @@
 | `/exercise/delete/:id` || `/exercise/delete` | Deleta exercício específico/Delete a specific exercise |
 
 
+---
+
+
 
 **EndPoints conta**
 **Account endpoints**
@@ -194,7 +225,11 @@
 | `/delete/:id` | Deleta usuário específico/Delete a specific user  |
 
 
+---
+
+
 ### Rodando o Back End 
+### Running the Back End
 
 ```bash
 Server Local
@@ -216,18 +251,26 @@ $ npm start
 # Mongo conectado em mongodb://localhost:27017/reprograma / connected to mongodb
 ```
 
+
+---
+
+
 ```bash
 Deploy
 * Acesse o [link da API](https://lwus.herokuapp.com/) /Access the link
 
 * Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku / Utilize to return and test the API andpoints locally or via Heroku
 ```
+
+
 ```bash
 Deploy
 * Access [link da API](https://lwus.herokuapp.com/) 
 
 * Utilize to [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) return and test the API andpoints locally or via Heroku
 ```
+
+
 
 Clique para visualizar o desenho da [DiagramLearnWithUs.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.jpg)
 
