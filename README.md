@@ -8,10 +8,11 @@
 <p>O projeto surge com a necessidade de, quem está aprendendo idiomas, encontrar exercícios relacionados aos conteúdos.
 </p>
 
-<p>The project was born with the necessity, who is learning lenguages, to find exercises about contents in english.
+<p>The project was born with the necessity of those who are learning languages to find exercises about contents in English.
 </p>
 
 **Modelo Exercício**
+**Exercise Model**
 
 ```json
     [
@@ -35,25 +36,29 @@
     ] 
 ```
 -   Pode inserir até 10 exercícios por formulário.
+-   We can insert up to 10 exercises for form.
 
 
 
 **A API possui:**
+**The API has:**
 - ``Um CRUD `` com exercícios de tempos verbais e  vocabulários usuais
 - ``Modelo Open Source `` para que professores e alunos contribuam com materiais e conteúdos no banco de dados 
-
-
+- ``A CRUD `` with exercises about verb tenses and usual vocabularies
+- ``Model Open Source `` for teachers and students to contribute with materials and contents on the database
 
 **A Missão**
-
+**The Mission**
 <p>Criar uma rede de apoio, incentivo e materiais para a prática constante até a perfeição, livre de custo financeiro. Aprender é prazeroso e aprender em conjunto é maravilhoso.
+</p>
+<p>Creating a support network, encouragement and materials to practice regularly in order to reach perfection, without financial costs. Learning is pleasurable and learning with other people is awesome.
 </p>
 
 
-
 **Arquitetura**
+**Architecture**
 
-        Arquitetura MVC
+        MVC
         |
         \--📂 API_learnWithUs
             |   README.md  
@@ -102,107 +107,131 @@
 
 **CRUD do Exercício**
 **Composto por:**
+**Exercise CRUD**
+**Made with:**
   
-- [x] Post - cadastrar o exercício e o contato do criador do material, como nome e linkedin (A ideia é criar um network através dessa iniciativa)
+- [x] Post - Cadastrar o exercício e o contato do criador do material, como nome e linkedin (A ideia é criar um network através dessa iniciativa)
 - [x] Get - Trazer os exercícios cadastrados no banco de dados
-- [x] Get - por Tema (ex: present perfect)
-- [x] Get - por id (ex: _id:5486565, exercício específico)
-- [x] Update - por id
-- [x] Delete - por id
-- [x]  Delete - por theme
+- [x] Get - Por Tema (ex: present perfect)
+- [x] Get - Por id (ex: _id:5486565, exercício específico)
+- [x] Update - Por id
+- [x] Delete - Por id
+- [x]  Delete - Por theme
+  
+- [x] Post - Register the exercise and the user of the material creator, Such as name and linkedin profile (The idea is to creat a network through this initiative)
+- [x] Get - To bring the registered exercises on data base
+- [x] Get - For theme (eg: present perfect)
+- [x] Get - For id (eg: _id:5486565, specific exercise)
+- [x] Update - For id
+- [x] Delete - For id
+
 
 
 
 **CRUD da Conta**
 **Composta por:**
+**Account CRUD**
+**Made with:**
 
-- [x]  Post - cadastrar o login do usuário/contribuinte
-- [x]  Get  - cadastros
-- [x]  Update - por id
-- [x]  delete - por id
+- [x]  Post - Cadastrar o login do usuário/contribuinte
+- [x]  Get  - Cadastros
+- [x]  Update - Por id
+- [x]  delete - Por id
+
+- [x]  Post - Register user/contributor login
+- [x]  Get  - Registers
+- [x]  Update - For id
+- [x]  delete - For id
 
 
 
 **EndPoints exercício**
+**Exercises endpoints**
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/exercise/all` | Retorna todos os exercícios |
+| `/exercise/all` | Retorna todos os exercícios/Return all the exercises |
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/exercise/new` | cadastra um novo exercício |
+| `/exercise/new` | Cadastra um novo exercício/Register a new exercise |
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/exercise/:id` | Retorna exercício específico |
+| `/exercise/:id` | Retorna exercício específico/Return to a specific exercise |
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/exercise/theme` | Retorna exercício específico pelo tema|
+| `/exercise/theme` | Retorna exercício específico pelo tema/ Return to a specific theme |
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/exercise/update/:id` | Atualiza exercício específico |
+| `/exercise/update/:id` | Atualiza exercício específico/Update exercise |
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/exercise/delete/:id` || `/exercise/delete` | Deleta exercício específico |
+| `/exercise/delete/:id` || `/exercise/delete` | Deleta exercício específico/Delete a specific exercise |
 
 
 
 **EndPoints conta**
+**Account endpoints**
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/register` | Cadastra um usuário |
+| `/register` | Cadastra um usuário/Register a user |
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/accounts` | Retorna usuários dados sencíveis     |
+| `/accounts` | Retorna usuários sem dados sencíveis/Return user without sensitive data  |
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/update/:id` | Atualiza usuário específico        |
+| `/update/:id` | Atualiza usuário específico/Update a specific user |
 
-| Recurso | Descrição |
+| Recurso/Resource | Descrição/Description |
 | --- | --- |
-| `/delete/:id` | Deleta usuário específico        |Server Local
+| `/delete/:id` | Deleta usuário específico/Delete a specific user  |
 
 
 ### Rodando o Back End 
 
 ```bash
 Server Local
-# Com o git
-# Clone este repositório
+# Com o git/With git
+# Clone este repositório/Clone this repository
 $ git clone <https://github.com/Letiiciia/API_learnWithUs>
 
-# Acesse a pasta do projeto no terminal/cmd
+# Acesse a pasta do projeto no terminal - cmd/Access the mkdir of project on terminal
 $ cd API_learnWithUs
 
-# Instale as dependências
+# Instale as dependências/Install the dependencies
 $ npm install
 $ npm instal mongoose
 
-# Execute o servidor
+# Execute o servidor/Run the server
 $ npm start
 
-# O servidor inciará na porta:8080 - acesse <http://localhost:8080>
-# Mongo conectado em mongodb://localhost:27017/reprograma
+# O servidor inciará na porta:8080 - acesse <http://localhost:8080>/The server will start on port 8080
+# Mongo conectado em mongodb://localhost:27017/reprograma / connected to mongodb
 ```
 
 ```bash
 Deploy
-* Acesse o [link da API](https://lwus.herokuapp.com/)
+* Acesse o [link da API](https://lwus.herokuapp.com/) /Access the link
 
-* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku
+* Utilize o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) para para chamar e testar os endpoints da API localmente ou via Heroku / Utilize to return and test the API andpoints locally or via Heroku
 ```
+```bash
+Deploy
+* Access [link da API](https://lwus.herokuapp.com/) 
 
+* Utilize to [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/download/) return and test the API andpoints locally or via Heroku
+```
 
 Clique para visualizar o desenho da [DiagramLearnWithUs.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.jpg)
 
-
+Click to visualize the drawing of [DiagramLearnWithUs.png](https://github.com/Letiiciia/API_learnWithUs/blob/master/img/Untitled%20Diagram.jpg)
 
 
 
