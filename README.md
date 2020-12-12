@@ -46,8 +46,17 @@
 ---
 
 
+<p> 
+
 **A API possui:**
+
+</p.>
+
+<p>
+
 **The API has:**
+
+</p.>
 - ``Um CRUD `` com exercícios de tempos verbais e  vocabulários usuais
 - ``Modelo Open Source `` para que professores e alunos contribuam com materiais e conteúdos no banco de dados 
 
@@ -134,7 +143,8 @@
 - [x] Get - Por id (ex: _id:5486565, exercício específico)
 - [x] Update - Por id
 - [x] Delete - Por id
-- [x]  Delete - Por theme..
+- [x]  Delete - Por theme
+  ..
 
 
 - [x] Post - Register the exercise and the user of the material creator, Such as name and linkedin profile (The idea is to creat a network through this initiative)
