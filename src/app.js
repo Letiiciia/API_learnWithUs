@@ -1,6 +1,7 @@
 const database = require('./database/connect');
 const exercisesRoute = require('./routes/exerciseRoutes');
-const userRoute = require('./routes/accountRoutes.js')
+const userRoute = require('./routes/accountRoutes.js');
+const test = require('./routes/test');
 
 const express = require('express');
 const app = express();
@@ -16,9 +17,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 //Rotas principais
-
+app.use('/', test);
 app.use('/exercise', exercisesRoute);
-app.use('/', userRoute)
+app.use('/user', userRoute)
 
 
 
