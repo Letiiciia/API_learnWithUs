@@ -124,9 +124,8 @@
 
 
 **CRUD do Exercício**-
-**Composto por:** // 
-**Exercise CRUD**-
-**Made with:**
+**Composto por:**
+
   
 - [x] Post - Cadastrar o exercício e o contato do criador do material, como nome e linkedin (A ideia é criar um network através dessa iniciativa)
 - [x] Get - Trazer os exercícios cadastrados no banco de dados
@@ -138,6 +137,8 @@
   
 ---
 
+**Exercise CRUD**-
+**Made with:**
 - [x] Post - Register the exercise and the user of the material creator, Such as name and linkedin profile (The idea is to creat a network through this initiative)
 - [x] Get - To bring the registered exercises on data base
 - [x] Get - For theme (eg: present perfect)
@@ -151,17 +152,15 @@
 
 
 **CRUD da Conta**-
-**Composta por:** //
-**Account CRUD**-
-**Made with:**
-
+**Composta por:** 
 - [x]  Post - Cadastrar o login do usuário/contribuinte
 - [x]  Get  - Cadastros
 - [x]  Update - Por id
 - [x]  delete - Por id..
   
 ---
-
+**Account CRUD**-
+**Made with:**
 - [x]  Post - Register user/contributor login
 - [x]  Get  - Registers
 - [x]  Update - For id
