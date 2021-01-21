@@ -5,4 +5,5 @@ module.exports = class StatusCode{
     static Created = 201;
     static Error = 500;
     static NoContent = 204;
+    static BadGetWay = 502
 }
